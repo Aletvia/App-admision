@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Home">
+
+    <TableLayout
+        android:id="@+id/tabla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:stretchColumns="*">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/pleca" />
+        <!--- FILA 1 -->
+
+        <TableRow>
+            <ImageButton
+                android:id="@+id/btn_BIENVENIDA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:onClick="btn_BIENVENIDA"
+                android:padding="9dip"
+                app:srcCompat="@mipmap/i_buap" />
+
+            <ImageButton
+                android:id="@+id/btn_OFERTA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:onClick="btn_OFERTA"
+                android:padding="9dip"
+                app:srcCompat="@mipmap/i_oferta" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Bienvenida"
+                android:onClick="btn_BIENVENIDA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/txt_OFERTA"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Oferta Educativa"
+                android:onClick="btn_OFERTA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        </TableRow>
+        <!--- FILA 2 -->
+        <TableRow>
+            <ImageButton
+                android:id="@+id/btn_CONVOCATORIAS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:onClick="btn_CONVOCATORIAS"
+                android:padding="9dip"
+                app:srcCompat="@mipmap/i_convocatorias" />
+
+            <ImageButton
+                android:id="@+id/btn_AVISOS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:onClick="btn_AVISOS"
+                android:padding="9dip"
+                app:srcCompat="@mipmap/i_avisos" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_CONVOCATORIAS"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Convocatorias"
+                android:onClick="btn_CONVOCATORIAS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/txt_AVISOS"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Avisos"
+                android:onClick="btn_AVISOS"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        </TableRow>
+        <!--- FILA 3 -->
+        <TableRow>
+            <ImageButton
+                android:id="@+id/btn_SEDES"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:onClick="btn_SEDES"
+                android:padding="9dip"
+                app:srcCompat="@mipmap/i_sedes" />
+
+            <ImageButton
+                android:id="@+id/btn_ACERCADE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:onClick="btn_ACERCADE"
+                android:padding="9dip"
+                app:srcCompat="@mipmap/i_ayuda" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_SEDES"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Sedes de registro"
+                android:onClick="btn_SEDES"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Nuestra app"
+                android:onClick="btn_ACERCADE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

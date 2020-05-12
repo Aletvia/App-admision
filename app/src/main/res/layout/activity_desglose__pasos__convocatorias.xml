@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Desglose_Pasos_Convocatorias">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Pasos de la convocatoria"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/descargar"
+            android:onClick="btn_descarga"
+            android:background="@drawable/degradado_azul"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/textoAdicional"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </TableRow>
+    <TableRow
+        android:id="@+id/botonAdcicionalConv"
+        android:gravity="center">
+    </TableRow>
+
+    <ListView
+        android:id="@+id/listaPasos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        style="@style/scrollV1" ></ListView>
+
+
+</TableLayout>

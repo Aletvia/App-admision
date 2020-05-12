@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.admision.aall">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Inicio"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Services.FireBaseId"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".Services.FireBaseServiceActualiza"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activity_Inicio_Oferta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Inicio_Convocatorias"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Inicio_Avisos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Inicio_Sedes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Inicio_Acerca"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Inicio_Bienvenida"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Desglose_Pasos_Convocatorias"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity_Programas_Licenciatura"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity_Sedes_por_Convocatoria"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity_Subpasos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity_Categorias_Programas"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity_Programas_Educativos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity_Inicio_Licenciatura_Convocatoria"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

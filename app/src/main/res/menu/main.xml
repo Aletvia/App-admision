@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Main">
+    <item android:id="@+id/FACEBOOK"
+        android:icon="@drawable/red"
+        android:title="Add"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+    <item android:id="@+id/TWITTER"
+        android:icon="@drawable/red_twi"
+        android:title="Search"
+        android:orderInCategory="2"
+        app:showAsAction="always"/>
+    <item android:id="@+id/YOUTUBE"
+        android:icon="@drawable/red_youtube"
+        android:title="Search"
+        android:orderInCategory="3"
+        app:showAsAction="always"/>
+</menu>

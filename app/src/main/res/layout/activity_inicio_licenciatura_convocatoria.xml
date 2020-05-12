@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Inicio_Licenciatura_Convocatoria">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/fotocon" />
+
+    <ScrollView
+        style="@style/scrollV1">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TableLayout
+                android:id="@+id/tabla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:stretchColumns="*">
+
+                <!--- FILA 1 -->
+                <TableRow
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/induccion" />
+
+                    <TextView
+                        android:id="@+id/misionTxt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Los aspirantes a Programas Educativos con Curso de Inducción deben acreditar el curso y cumplir con los respectivos pasos específicos."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </TableRow>
+                <!--- FILA 2 -->
+                <TableRow
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/adicional" />
+
+                    <TextView
+                        android:id="@+id/misionTxt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Los aspirantes a Licenciaturas con requisitos adicionales deben cubrirlos y cumplir los pasos específicos."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </TableRow>
+
+                <!--- FILA 3 -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/degradado_azul">
+
+                    <TextView
+                        android:id="@+id/misionTxt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="10dp"
+                        android:text="¿La carrera que quiero cuenta con requisitos adicionales o curso de inducción? \n Consulta la lista"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="showDialogListView"
+                        android:text="Aquí " />
+                </TableLayout>
+                <!--- FILA 4 -->
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:id="@+id/misionTxt4"
+                        android:onClick="verConvocatoria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingTop="20dp"
+                        android:text="Ver convocatoria"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:onClick="verConvocatoria"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/siguiente" />
+                </LinearLayout>
+
+            </TableLayout>
+        </TableLayout>
+    </ScrollView>
+</TableLayout>

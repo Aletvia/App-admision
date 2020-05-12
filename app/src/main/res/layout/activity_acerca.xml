@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Inicio_Acerca">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="70dp"
+        android:layout_height="110dp"
+        android:paddingTop="15dp"
+        app:srcCompat="@drawable/logo" />
+
+    <ScrollView
+        style="@style/scrollV1" >
+        <TableLayout
+            android:id="@+id/tabla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:stretchColumns="*">
+
+
+            <TextView
+                android:id="@+id/Txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="30dp"
+                android:paddingBottom="20dp"
+                android:text="Buscando mejorar la experiencia de nuestros aspirantes en la adquisición de información por medio de los servicios digitales de nuestra institución, ponemos a tu disposición la aplicación Admisión.\n\nEn esta aplicación encontrarás la información necesaria para llevar a cabo tu proceso de Admisión a la Institución."
+                android:textAppearance="@style/letraAzul"
+                android:textStyle="normal" />
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/semaforo_v" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/semaforo_a" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/semaforo_r" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/v"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Icono verde:\nActualmente\n en curso"
+                    android:textAppearance="@style/letraAzul" />
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Icono amarillo:\nDisponible\n proximamente"
+                    android:textAppearance="@style/letraAzul" />
+
+                <TextView
+                    android:id="@+id/r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Icono rojo:\n   Cerrado  \n      "
+                    android:textAppearance="@style/letraAzul" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/TxtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="30dp"
+                android:paddingBottom="20dp"
+                android:text="Algunos programas educativos requieren de pasos adicionales para el proceso de admisión, los cuales podrás ubicar por sus íconos característicos en cada convocatoria."
+                android:textAppearance="@style/letraAzul"
+                android:textStyle="normal" />
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/mus"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/musica" />
+
+                <ImageView
+                    android:id="@+id/adi"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/adicional" />
+
+                <ImageView
+                    android:id="@+id/indu"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/induccion" />
+
+            </TableRow>
+
+            <TableRow
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/musiTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Icono para:\nTécnico\n en música"
+                    android:textAppearance="@style/letraAzul" />
+
+                <TextView
+                    android:id="@+id/adiTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Icono para:\nRequisitos\n adicionales"
+                    android:textAppearance="@style/letraAzul" />
+
+                <TextView
+                    android:id="@+id/induTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Icono para:\nCuso de\ninducción"
+                    android:textAppearance="@style/letraAzul" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/buap"
+                android:paddingTop="20dp"
+                android:text="ADMISIÓN"
+                android:textAppearance="@style/letraAzul"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/frase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:text="Dirección de Administración Escolar"
+                android:textAppearance="@style/letraAzul" />
+
+            <TextView
+                android:id="@+id/infoContactos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Calle: --------------------- ------ No.###\nColonia: -- ---------- \n-------------- ------- -------- ------- -- -------.\ncorreo@correo.correo.correo"
+                android:textAppearance="@style/letraAzul"
+                android:textStyle="normal"/>
+
+
+            <TextView
+                android:id="@+id/infoContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="\n\nDiseño y Desarrollo:\nAletvia Anaid Lecona Lara\naletvialecona@gmail.com\n\nVersion 1.0\n"
+                android:textAppearance="@style/letraAzul"
+                android:textStyle="normal"/>
+
+
+
+
+        </TableLayout>
+    </ScrollView>
+</TableLayout>

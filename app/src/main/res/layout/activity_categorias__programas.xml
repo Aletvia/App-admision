@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Categorias_Programas">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Categorías"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"/>
+
+    <TableRow
+        android:id="@+id/infoAdicional"
+        android:gravity="center">
+    </TableRow>
+
+    <ListView
+        android:id="@+id/listaCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        style="@style/scrollV1" ></ListView>
+</TableLayout>

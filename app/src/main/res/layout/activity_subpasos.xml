@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:stretchColumns="*"
+    tools:context=".Activity_Subpasos">
+
+
+    <TableRow
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tituloSubpaso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Pasos de la convocatoria"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/textoAdicional"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </TableRow>
+    <TableRow
+        android:id="@+id/botonAdcicional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"></TableRow>
+
+    <ListView
+        android:id="@+id/listaSubpasos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:listSelector="@android:color/transparent"
+        style="@style/scrollV1" ></ListView>
+
+
+</TableLayout>
